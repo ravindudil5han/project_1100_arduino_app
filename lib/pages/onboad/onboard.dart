@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:project_1100/pages/home_pages/con_home_page.dart';
 
 class OnBoardPage extends StatelessWidget {
   const OnBoardPage({super.key});
@@ -53,7 +54,12 @@ class OnBoardPage extends StatelessWidget {
                         ),
                         child: ElevatedButton(
                           onPressed: () {
-                            // Add your logic here
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => const AppConHomePage(),
+                              ),
+                            );
                           },
                           style: ElevatedButton.styleFrom(
                             backgroundColor: Colors.transparent,
